@@ -1,0 +1,48 @@
+{
+  "name": "natsort-esm",
+  "version": "1.0.0",
+  "description": "Natural sort algorithm",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "tsc": "tsc",
+    "build": "npm run clean && npm run tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "test": "cross-env NODE_ENV=test mocha -r ts-node/register test/*.spec.ts",
+    "bl": "npm run build && npm link",
+    "prepack": "npm run build"
+  },
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": ">=16.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dscalzi/natsort-esm.git"
+  },
+  "author": "Daniel Scalzi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dscalzi/natsort-esm/issues"
+  },
+  "homepage": "https://github.com/dscalzi/natsort-esm#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "chai": "^4.3.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.36.0",
+    "mocha": "^10.2.0",
+    "rimraf": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  },
+  "files": [
+    "dist"
+  ]
+}
