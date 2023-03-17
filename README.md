@@ -4,7 +4,7 @@
 
 ## Note
 
-natsort-esm is an updated version of https://github.com/bubkoo/natsort/. It is a pure ESM module and cannot be imported from a commonjs project.
+natsort-esm is an updated version of https://github.com/bubkoo/natsort/. It is a pure ESM module and cannot be imported from a CommonJS project. Node 16+ is supported.
 
 ## TL;DR
 
@@ -49,7 +49,7 @@ const objArr = [
   { val: 'c' }
 ];
 
-var sorter = natsort();
+const sorter = natsort();
 
 objArr.sort((a, b) => {
   return sorter(a.val, b.val);

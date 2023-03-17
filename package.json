@@ -44,5 +44,19 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "natural",
+    "natsort",
+    "sort",
+    "sorter",
+    "numeric",
+    "unicode",
+    "algorithm",
+    "date",
+    "datetime",
+    "desc",
+    "case-insensitive",
+    "esm"
   ]
 }
