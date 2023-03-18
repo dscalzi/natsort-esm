@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Natural sort algorithm",
   "type": "module",
-  "main": "./dist/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "tsc": "tsc",
